@@ -16,27 +16,39 @@ using namespace std;
 //     return binaryno;
 // }
 
-int decimalToBinaryMethod2(int n)
+// int decimalToBinaryMethod2(int n)
+// {
+//     // Divison Method
+//     int binaryno = 0;
+//     int i = 0;
+//     while(n > 0)
+//     {
+//         int bit = (n & 1);
+//         // cout << bit << endl;
+//         binaryno = bit * pow(10 , i++) + binaryno;
+//         n = n >> 1;
+//     }
+//     return binaryno;
+// }
+
+int binaryTodecimal(int n)
 {
-    // Divison Method
-    int binaryno = 0;
-    int i = 0;
-    while(n > 0)
-    {
-        int bit = (n & 1);
-        // cout << bit << endl;
-        binaryno = bit * pow(10 , i++) + binaryno;
-        n = n >> 1;
-    }
-    return binaryno;
+    int decimal = 0;
+
+
+    return decimal;
 }
 
 
 int main()
 {
-    int n;
-    cin >> n;
-    int binary = decimalToBinaryMethod2(n);
-    cout << binary << endl;
+    // int n;
+    // cin >> n;
+    // int binary = decimalToBinaryMethod2(n);
+    // cout << binary << endl;
+
+    int binaryno;
+    cin >> binaryno;
+    cout << binaryTodecimal(binaryno);
     return 0;
 }
